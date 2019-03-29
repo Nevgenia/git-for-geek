@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+<title>Домашняя работа ко второму уроку</title>
+
+<body>
+    <script>
+        //console.log('Задание 1');
+
+        console.log('Задание 2');
+        console.log('Будет 5, потому что a*=2 это a=а*2');
+
+        console.log('Задание 3');
+        var x = +prompt('Введите число a');
+        var y = +prompt('Введите число b');
+
+        if (x >= 0 && y >= 0) {
+            console.log('a - b = ' + (x - y));
+        } else if (x < 0 && y < 0) {
+            console.log('a * b = ' + (x * y));
+        } else if ((x > 0 && y < 0) || (x < 0 && y > 0)) {
+            console.log('a + b = ' + (x + y));
+        }
+
+        console.log('Задание 4');
+        var a = +prompt('Введите число от 0 до 15');
+
+        switch (a) {
+            case 0:
+                console.log(a);
+                a++;
+            case 1:
+                console.log(a);
+                a++;
+            case 2:
+                console.log(a);
+                a++;
+            case 3:
+                console.log(a);
+                a++;
+            case 4:
+                console.log(a);
+                a++;
+
+            case 5:
+                console.log(a);
+                a++;
+            case 6:
+                console.log(a);
+                a++;
+            case 7:
+                console.log(a);
+                a++;
+            case 8:
+                console.log(a);
+                a++;
+            case 9:
+                console.log(a);
+                a++;
+            case 10:
+                console.log(a);
+                a++;
+            case 11:
+                console.log(a);
+                a++;
+            case 12:
+                console.log(a);
+                a++;
+            case 13:
+                console.log(a);
+                a++;
+            case 14:
+                console.log(a);
+                a++;
+            case 15:
+                console.log(a);
+                break;
+
+        }
+
+
+        console.log('Задание 5');
+        var summa = function(m, n) {
+            return ('Сумма ' + (m + n))
+        }
+        var raznost = function(m, n) {
+            return ('Разность ' + (m - n))
+        }
+        var proizvedenie = function(m, n) {
+            return ('Произведение ' + (m * n))
+        }
+        var delenie = function(m, n) {
+            return ('Деление ' + (m / n))
+        }
+        console.log(summa(45, 5));
+        console.log(raznost(45, 5));
+        console.log(proizvedenie(45, 5));
+        console.log(delenie(45, 5));
+
+        console.log('Задание 6');
+
+        var arg1 = +prompt('Введите первое число');
+        var arg2 = +prompt('Введите второе число');
+        var operation = prompt('Какую хотите математическую операцию? 1 - сумма, 2 - разность, 3 - произведение, 4 - деление')
+
+        function mathOperation(arg1, arg2, operation) {
+            var z;
+            if (operation == 1) {
+               z = summa(arg1, arg2);
+            } else if (operation == 2) {
+               z = raznost(arg1, arg2);
+            } else if (operation == 3) {
+               z = proizvedenie(arg1, arg2);
+            } else if (operation == 4) {
+                z = delenie(arg1, arg2);
+            }
+            return(z)
+        }
+        
+        console.log(mathOperation(arg1,arg2,operation));
+
+    </script>
+</body>
+
+</html>
