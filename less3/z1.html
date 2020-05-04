@@ -1,0 +1,35 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+
+<body>
+    <p>С помощью цикла while вывести все простые числа в промежутке от 0 до 100</p>
+    <script>
+        var a = 2;
+
+        var arr = [2];
+        while (a <= 100) {
+            var n = 1;
+            for (let b = 0; b <= arr.length; b++) {
+                if (a % arr[b] == 0) {
+                    n = 0;
+                }
+            }
+            if (n == 1) {
+                arr.push(a);
+
+            }
+
+            a++;
+
+        }
+        
+        console.log(arr);
+
+    </script>
+
+</body>
+</head>
+
+</html>

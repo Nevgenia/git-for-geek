@@ -1,0 +1,26 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+
+<body>
+    <p></p>
+    <script>
+        var mas1 = ['Яблоко', 'Банан', 'Апельсин'];
+        var mas2 = [120, 80, 180];
+        console.log('Сумма к оплате ' + countBasketPrice(mas2) + ' руб.');
+
+        function countBasketPrice(mass) {
+            var result = 0;
+            for (var i = 0; i < mass.length; i++) {
+                result += mass[i];                
+            }
+            return result;
+        };
+       
+    </script>
+
+</body>
+</head>
+
+</html>
